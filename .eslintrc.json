@@ -12,7 +12,8 @@
   },
   "ignorePatterns": [
     "node_modules/",
-    ".idea/"
+    ".idea/",
+    "jest.config.js"
   ],
   "settings": {
     "import/resolver": {
