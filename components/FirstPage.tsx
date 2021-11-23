@@ -9,7 +9,10 @@ const FirstPageImage = styled.img`
 
 function FirstPage () {
   return (
-    <FirstPageImage src={ImagePath.FirstPageImage} alt='first page image'/>
+    <>
+      <FirstPageImage src={ImagePath.FirstPageImage} alt='first page image'/>
+    </>
+
   );
 }
 
