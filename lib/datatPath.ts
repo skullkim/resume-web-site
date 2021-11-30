@@ -5,10 +5,18 @@ export enum ImagePath {
   githubSvg='/images/aboutMe/github.svg',
   toolsSvg='/images/aboutMe/tools.svg',
   laptopSvg='/images/aboutMe/laptop.svg',
+  awsSvg = '/images/mainSkills/amazonaws.svg',
+  expressSvg = '/images/mainSkills/express.svg',
+  mainSkillsLogo = '/images/mainSkills/mainSkills.png',
+  mysqlSvg = '/images/mainSkills/mysql.svg',
+  nodeSvg = '/images/mainSkills/nodedotjs.svg',
+  reactSvg = '/images/mainSkills/react.svg',
+  typescriptSvg = '/images/mainSkills/typescript.svg',
 }
 
 export enum PageTitle {
   AboutMe = 'ABOUT ME',
+  MainSkills = 'MAIN SKILLS',
 }
 
 /* about me page */
