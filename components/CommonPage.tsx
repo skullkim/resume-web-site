@@ -2,10 +2,14 @@ import React from "react";
 import styled from 'styled-components';
 
 import {myNickName} from "../lib/datatPath";
+import {PageProps} from "../lib/dataType";
 
 const PageBox = styled.section`
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const PageTitleBox = styled.div`
@@ -54,13 +58,20 @@ const NickNameBox = styled.div`
   }
 `;
 
-function CommonPage () {
+const ContextBox = styled.div`
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+`;
+
+const CommonPage: React.FC<PageProps> = ({pageTitle, children}) => {
   return (
     <PageBox>
       <PageTitleBox>
-        <PageTitle>ABOUT ME</PageTitle>
+        <PageTitle>{pageTitle}</PageTitle>
         <NickNameBox>{myNickName}</NickNameBox>
       </PageTitleBox>
+      <ContextBox>{children}</ContextBox>
     </PageBox>
   );
 }
