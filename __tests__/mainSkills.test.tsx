@@ -29,5 +29,5 @@ test('main skills page', () => {
   expect(typescriptSvg).toHaveAttribute('alt', 'typescript logo');
   expect(typescriptSvg).toHaveAttribute('src', `${ImagePath.typescriptSvg}`);
   expect(nodeSvg).toHaveAttribute('alt', 'nodejs logo');
-  expect(nodeSvg).toHaveAttribute('src', `${ImagePath.typescriptSvg}`);
+  expect(nodeSvg).toHaveAttribute('src', `${ImagePath.nodeSvg}`);
 })

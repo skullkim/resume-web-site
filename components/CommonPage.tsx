@@ -5,8 +5,8 @@ import {myNickName} from "../lib/datatPath";
 import {PageProps} from "../lib/dataType";
 
 const PageBox = styled.section`
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
