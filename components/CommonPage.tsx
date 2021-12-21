@@ -10,6 +10,7 @@ const PageBox = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 2px solid black;
 `;
 
 const PageTitleBox = styled.div`
