@@ -2,6 +2,7 @@ enum ImageCommonPath {
   firstPage = '/images/firstPage',
   aboutMe = '/images/aboutMe',
   mainPage = '/images/mainSkills',
+  otherSkills = '/images/otherSkills',
 }
 
 export const ImagePath = {
@@ -21,6 +22,22 @@ export const ImagePath = {
   nodeSvg: `${ImageCommonPath.mainPage}/nodedotjs.svg`,
   reactSvg: `${ImageCommonPath.mainPage}/react.svg`,
   typescriptSvg: `${ImageCommonPath.mainPage}/typescript.svg`,
+  // other skills page
+  otherSkillsLogo: `${ImageCommonPath.otherSkills}/otherSkills.png`,
+  docker: `${ImageCommonPath.otherSkills}/currentLearning/docker.svg`,
+  nginx: `${ImageCommonPath.otherSkills}/currentLearning/nginx.svg`,
+  c: `${ImageCommonPath.otherSkills}/experiencedSkills/c.svg`,
+  cplusplus: `${ImageCommonPath.otherSkills}/experiencedSkills/cplusplus.svg`,
+  java: `${ImageCommonPath.otherSkills}/experiencedSkills/java.svg`,
+  jquery: `${ImageCommonPath.otherSkills}/experiencedSkills/jquery.svg`,
+  nunjucks: `${ImageCommonPath.otherSkills}/experiencedSkills/nunjucks.svg`,
+  datagrip: `${ImageCommonPath.otherSkills}/favoriteTools/datagrip.svg`,
+  github: `${ImageCommonPath.otherSkills}/favoriteTools/github.svg`,
+  intellij: `${ImageCommonPath.otherSkills}/favoriteTools/intellij.svg`,
+  notion: `${ImageCommonPath.otherSkills}/favoriteTools/notion.svg`,
+  slack: `${ImageCommonPath.otherSkills}/favoriteTools/slack.svg`,
+  vim: `${ImageCommonPath.otherSkills}/favoriteTools/vim.svg`,
+  webstorm: `${ImageCommonPath.otherSkills}/favoriteTools/webstorm.svg`,
 }
 Object.freeze(ImagePath);
 
