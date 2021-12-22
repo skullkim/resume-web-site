@@ -1,18 +1,28 @@
-export enum ImagePath {
-  FirstPageImage= '/images/firstPage/firstPage.png',
-  myImage='/images/aboutMe/me.jpg',
-  blogSvg='/images/aboutMe/blog.svg',
-  githubSvg='/images/aboutMe/github.svg',
-  toolsSvg='/images/aboutMe/tools.svg',
-  laptopSvg='/images/aboutMe/laptop.svg',
-  awsSvg = '/images/mainSkills/amazonaws.svg',
-  expressSvg = '/images/mainSkills/express.svg',
-  mainSkillsLogo = '/images/mainSkills/mainSkills.png',
-  mysqlSvg = '/images/mainSkills/mysql.svg',
-  nodeSvg = '/images/mainSkills/nodedotjs.svg',
-  reactSvg = '/images/mainSkills/react.svg',
-  typescriptSvg = '/images/mainSkills/typescript.svg',
+enum ImageCommonPath {
+  firstPage = '/images/firstPage',
+  aboutMe = '/images/aboutMe',
+  mainPage = '/images/mainSkills',
 }
+
+export const ImagePath = {
+  // first page
+  FirstPageImage: `${ImageCommonPath.firstPage}/firstPage.png`,
+  // about me page
+  myImage: `${ImageCommonPath.aboutMe}/me.jpg`,
+  blogSvg: `${ImageCommonPath.aboutMe}/blog.svg`,
+  githubSvg: `${ImageCommonPath.aboutMe}/github.svg`,
+  toolsSvg: `${ImageCommonPath.aboutMe}/tools.svg`,
+  laptopSvg: `${ImageCommonPath.aboutMe}/laptop.svg`,
+  // main skills page
+  awsSvg: `${ImageCommonPath.mainPage}/amazonaws.svg`,
+  expressSvg: `${ImageCommonPath.mainPage}/express.svg`,
+  mainSkillsLogo: `${ImageCommonPath.mainPage}/mainSkills.png`,
+  mysqlSvg: `${ImageCommonPath.mainPage}/mysql.svg`,
+  nodeSvg: `${ImageCommonPath.mainPage}/nodedotjs.svg`,
+  reactSvg: `${ImageCommonPath.mainPage}/react.svg`,
+  typescriptSvg: `${ImageCommonPath.mainPage}/typescript.svg`,
+}
+Object.freeze(ImagePath);
 
 export enum PageTitle {
   AboutMe = 'ABOUT ME',
