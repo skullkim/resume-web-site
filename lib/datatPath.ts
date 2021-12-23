@@ -44,7 +44,7 @@ export const ImagePath = {
   webstorm: `${ImageCommonPath.otherSkills}/favoriteTools/webstorm.svg`,
   // career page
   careerLogo: `${ImageCommonPath.career}/career.svg`,
-  dot: `${ImageCommonPath.career}/dot.svg`,
+  dot: `/images/dot.svg`,
 }
 Object.freeze(ImagePath);
 

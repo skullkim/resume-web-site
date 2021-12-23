@@ -20,7 +20,7 @@ test('career page', () => {
 
   expect(careerLogo).toHaveAttribute('src', "/images/career/career.svg");
   dot.forEach(d => expect(d)
-    .toHaveAttribute('src', "/images/career/dot.svg"));
+    .toHaveAttribute('src', "/images/dot.svg"));
   expect(university).toBeInTheDocument();
   expect(airForce).toBeInTheDocument();
   expect(likeLion).toBeInTheDocument();
