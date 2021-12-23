@@ -21,7 +21,7 @@ test('other skills page', () => {
   const cplusplus = screen.getByAltText('cplusplus logo');
   const c = screen.getByAltText('c logo');
 
-  const favoriteTools = screen.getByText('FavoriteTools');
+  const favoriteTools = screen.getByText('Favorite Tools');
   const github = screen.getByAltText('github logo');
   const slack = screen.getByAltText('slack logo');
   const notion = screen.getByAltText('notion logo');

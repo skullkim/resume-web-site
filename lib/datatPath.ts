@@ -26,6 +26,7 @@ export const ImagePath = {
   otherSkillsLogo: `${ImageCommonPath.otherSkills}/otherSkills.png`,
   docker: `${ImageCommonPath.otherSkills}/currentLearning/docker.svg`,
   nginx: `${ImageCommonPath.otherSkills}/currentLearning/nginx.svg`,
+  javaScript: `${ImageCommonPath.otherSkills}/experiencedSkills/javascript.svg`,
   c: `${ImageCommonPath.otherSkills}/experiencedSkills/c.svg`,
   cplusplus: `${ImageCommonPath.otherSkills}/experiencedSkills/cplusplus.svg`,
   java: `${ImageCommonPath.otherSkills}/experiencedSkills/java.svg`,
@@ -44,6 +45,7 @@ Object.freeze(ImagePath);
 export enum PageTitle {
   AboutMe = 'ABOUT ME',
   MainSkills = 'MAIN SKILLS',
+  OtherSkills = 'OTHER SKILLS',
 }
 
 /* about me page */
