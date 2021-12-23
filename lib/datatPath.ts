@@ -1,8 +1,11 @@
+import Image from "next/image";
+
 enum ImageCommonPath {
   firstPage = '/images/firstPage',
   aboutMe = '/images/aboutMe',
   mainPage = '/images/mainSkills',
   otherSkills = '/images/otherSkills',
+  career = '/images/career',
 }
 
 export const ImagePath = {
@@ -39,6 +42,9 @@ export const ImagePath = {
   slack: `${ImageCommonPath.otherSkills}/favoriteTools/slack.svg`,
   vim: `${ImageCommonPath.otherSkills}/favoriteTools/vim.svg`,
   webstorm: `${ImageCommonPath.otherSkills}/favoriteTools/webstorm.svg`,
+  // career page
+  careerLogo: `${ImageCommonPath.career}/career.svg`,
+  dot: `${ImageCommonPath.career}/dot.svg`,
 }
 Object.freeze(ImagePath);
 
@@ -46,6 +52,7 @@ export enum PageTitle {
   AboutMe = 'ABOUT ME',
   MainSkills = 'MAIN SKILLS',
   OtherSkills = 'OTHER SKILLS',
+  Career = 'CAREER',
 }
 
 /* about me page */
@@ -68,3 +75,13 @@ export const blogUrl = 'https://iskull-dev.tistory.com/';
 export const gitHubUrlSentence = `깃허브: ${gitHubUrl}`;
 
 export const blogUrlSentence = `블로그: ${blogUrl}`;
+
+/* career page */
+export enum MyCareer {
+  university = '2018.03 ~ : MyongJi University Dept.Computer Engineering',
+  airForce = '2019.01 ~ 2020.11: AirForce',
+  likeLion = '2021.03 ~ 2021.12: MyongJi University Like Lion 9th GEN',
+  myongJiCodingCompetition = '2018 명지대학교 코딩경진대회 우수상',
+  ICPCAlgorithmCompetition = '2021 ICPC 본선(64th)',
+  TOEICSpeaking = 'TOEIC Speaking 6/140',
+}
