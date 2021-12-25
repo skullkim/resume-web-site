@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 
 import CommonPage from "./CommonPage";
-import {PageLogo, SkillsBox} from "./style/commonStyled";
+import {Dot, PageLogo, SkillsBox} from "./style/commonStyled";
 import {ImagePath, PageTitle, MyCareer} from "../lib/datatPath";
 
 const CareerBox = styled.div`
@@ -19,11 +19,6 @@ const CareerPageLogo = styled(PageLogo)`
 const CareerSkillBox = styled(SkillsBox)`
   right: 9vw;
   top: 10vh;
-`;
-
-const Dot = styled.img`
-  width: 2.3vw;
-  margin-right: 7px;
 `;
 
 const CareerList = styled.p`

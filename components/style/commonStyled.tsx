@@ -32,3 +32,8 @@ export const SkillRowBox = styled.div`
 export const SkillLogo = styled.img`
   width: 5vw;
 `;
+
+export const Dot = styled.img`
+  width: 2.3vw;
+  margin-right: 7px;
+`;

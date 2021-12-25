@@ -6,6 +6,7 @@ enum ImageCommonPath {
   mainPage = '/images/mainSkills',
   otherSkills = '/images/otherSkills',
   career = '/images/career',
+  repositories = '/images/repositories',
 }
 
 export const ImagePath = {
@@ -45,6 +46,8 @@ export const ImagePath = {
   // career page
   careerLogo: `${ImageCommonPath.career}/career.svg`,
   dot: `/images/dot.svg`,
+  // repositories page
+  repositoryLogo: `${ImageCommonPath.repositories}/repository.svg`,
 }
 Object.freeze(ImagePath);
 
@@ -53,6 +56,7 @@ export enum PageTitle {
   MainSkills = 'MAIN SKILLS',
   OtherSkills = 'OTHER SKILLS',
   Career = 'CAREER',
+  Repositories = 'REPOSITORIES',
 }
 
 /* about me page */
@@ -84,4 +88,23 @@ export enum MyCareer {
   myongJiCodingCompetition = '2018 명지대학교 코딩경진대회 우수상',
   ICPCAlgorithmCompetition = '2021 ICPC 본선(64th)',
   TOEICSpeaking = 'TOEIC Speaking 6/140',
+}
+
+/* repositories page */
+export enum Repository {
+  learningCode = 'Learning code refactoring production: 코딩 커뮤니티',
+  learningCodeSkills = '(JS, React, Express, Sequelize, Mysql, Docker, Nginx, HTTPS, AWS(S3))',
+  learningCodeUrl = 'https://github.com/skullkim/learning-code-reafactoring-production',
+
+  metroMap = 'metro map production: 지하철 노선도 서비스',
+  metroMapSkills = '(Express(TS), React(JS), Mysql, Typeorm, Docker, Nginx, HTTPS, JWT)',
+  metroMapUrl = 'https://github.com/skullkim/metro-map-production',
+
+  Itube = 'Itube simple clone of youtube: 유투브 클론코딩',
+  ItubeSkills = '(JS, Express, Nunjucks, Jquery, Sequelize, Mysql, AWS(EC2, RDS, S3))',
+  ItubeUrl = 'https://github.com/skullkim/Itube-simple-clone-of-youtube',
+
+  algorithm = 'Algorithm: 백준 알고리즘 문제 풀이',
+  algorithmSkills = '(C++)',
+  algorithmUrl = 'https://github.com/skullkim/algorithm',
 }
