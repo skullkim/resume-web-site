@@ -7,6 +7,7 @@ import MainSkills from "../components/MainSkills";
 import OtherSkills from "../components/OtherSkills";
 import Career from "../components/Career";
 import Repositories from "../components/Repositories";
+import ContactMe from "../components/ContactMe";
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <OtherSkills />
       <Career />
       <Repositories />
+      <ContactMe />
     </>
   );
 }

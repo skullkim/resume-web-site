@@ -7,6 +7,7 @@ enum ImageCommonPath {
   otherSkills = '/images/otherSkills',
   career = '/images/career',
   repositories = '/images/repositories',
+  contact = '/images/contactMe',
 }
 
 export const ImagePath = {
@@ -48,6 +49,8 @@ export const ImagePath = {
   dot: `/images/dot.svg`,
   // repositories page
   repositoryLogo: `${ImageCommonPath.repositories}/repository.svg`,
+  // contact me page
+  contactLogo: `${ImageCommonPath.contact}/contactMe.svg`,
 }
 Object.freeze(ImagePath);
 
@@ -57,6 +60,7 @@ export enum PageTitle {
   OtherSkills = 'OTHER SKILLS',
   Career = 'CAREER',
   Repositories = 'REPOSITORIES',
+  ContactMe = 'CONTACT ME',
 }
 
 /* about me page */
@@ -107,4 +111,11 @@ export enum Repository {
   algorithm = 'Algorithm: 백준 알고리즘 문제 풀이',
   algorithmSkills = '(C++)',
   algorithmUrl = 'https://github.com/skullkim/algorithm',
+}
+
+/* contact me page */
+export enum Contact {
+  phoneNumber = 'Phone Number: 010-3687-1878',
+  email = 'Email: kyk990328@gmail.com',
+  kakaoId = 'Kakao ID: kkood',
 }
