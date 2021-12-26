@@ -84,14 +84,14 @@ export const AboutMeData = {
 Object.freeze(AboutMeData);
 
 /* career page */
-export enum MyCareer {
-  university = '2018.03 ~ : MyongJi University Dept.Computer Engineering',
-  airForce = '2019.01 ~ 2020.11: AirForce',
-  likeLion = '2021.03 ~ 2021.12: MyongJi University Like Lion 9th GEN',
-  myongJiCodingCompetition = '2018 명지대학교 코딩경진대회 우수상',
-  ICPCAlgorithmCompetition = '2021 ICPC 본선(64th)',
-  TOEICSpeaking = 'TOEIC Speaking 6/140',
-}
+export const myCareer = [
+  '2018.03 ~ : MyongJi University Dept.Computer Engineering',
+  '2019.01 ~ 2020.11: AirForce',
+  '2021.03 ~ 2021.12: MyongJi University Like Lion 9th GEN',
+  '2018 명지대학교 코딩경진대회 우수상',
+  '2021 ICPC 본선(64th)',
+  'TOEIC Speaking 6/140',
+];
 
 /* repositories page */
 export enum Repository {

@@ -3,7 +3,7 @@ import React from 'react';
 
 import CommonPage from "./CommonPage";
 import {Dot, PageLogo, SkillsBox} from "./style/commonStyled";
-import {ImagePath, PageTitle, MyCareer} from "../lib/datatPath";
+import {ImagePath, PageTitle, myCareer} from "../lib/datatPath";
 
 const CareerBox = styled.div`
   display: flex;
@@ -31,35 +31,12 @@ const Career: React.FC = () => {
       <>
         <CareerPageLogo src={ImagePath.careerLogo} alt="career logo"/>
         <CareerSkillBox>
-          <CareerBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <CareerList>{MyCareer.university}</CareerList>
-          </CareerBox>
-
-          <CareerBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <CareerList>{MyCareer.airForce}</CareerList>
-          </CareerBox>
-
-          <CareerBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <CareerList>{MyCareer.likeLion}</CareerList>
-          </CareerBox>
-
-          <CareerBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <CareerList>{MyCareer.myongJiCodingCompetition}</CareerList>
-          </CareerBox>
-
-          <CareerBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <CareerList>{MyCareer.ICPCAlgorithmCompetition}</CareerList>
-          </CareerBox>
-
-          <CareerBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <CareerList>{MyCareer.TOEICSpeaking}</CareerList>
-          </CareerBox>
+          {myCareer.map(career => (
+            <CareerBox key={career}>
+                <Dot src={ImagePath.dot} alt="dot"/>
+                <CareerList>{career}</CareerList>
+            </CareerBox>
+          ))}
         </CareerSkillBox>
       </>
     </CommonPage>
