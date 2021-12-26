@@ -75,7 +75,7 @@ const GithubBlogBox = styled.div`
   width: 60vw;
   margin-left: 5vw;
   position: relative;
-  bottom: 8vh;
+  bottom: 5vh;
 `;
 
 const Link = styled.a`
