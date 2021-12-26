@@ -3,12 +3,9 @@ import styled from 'styled-components';
 
 import CommonPage from "./CommonPage";
 import {
-  aboutMeFavoriteSentence,
-  aboutMeIntro1,
-  aboutMeIntro2,
-  aboutMeIntro3, aboutMeIntro4, blogUrl, blogUrlSentence, gitHubUrl, gitHubUrlSentence,
+  AboutMeData,
   ImagePath,
-  PageTitle
+  PageTitle, Url
 } from "../lib/datatPath";
 
 const MyImage = styled.img`
@@ -95,23 +92,21 @@ const AboutMe: React.FC = () => {
         <IntroductionBox>
           <FavoriteSentenceBox>
             <LapTopSvg src={ImagePath.laptopSvg} alt="laptop image"/>
-            <FavoriteSentence>{aboutMeFavoriteSentence}</FavoriteSentence>
+            <FavoriteSentence>{AboutMeData.favoriteSentence}</FavoriteSentence>
             <ToolsSvg src={ImagePath.toolsSvg} alt="tools image"/>
           </FavoriteSentenceBox>
           <Introduction>
-            <Sentence>&nbsp;&nbsp;{aboutMeIntro1}</Sentence>
-            <Sentence>&nbsp;&nbsp;{aboutMeIntro2}</Sentence>
-            <Sentence>&nbsp;&nbsp;{aboutMeIntro3}</Sentence>
-            <Sentence>&nbsp;&nbsp;{aboutMeIntro4}</Sentence>
+            {AboutMeData.introduction.map(intro =>
+              <Sentence key={intro}>&nbsp;&nbsp;{intro}</Sentence>)}
           </Introduction>
           <GithubBlogBox>
-            <Link href={gitHubUrl}>
+            <Link href={Url.github}>
               <LinkSvg src={ImagePath.githubSvg} alt='github logo'/>
-              <Sentence>{gitHubUrlSentence}</Sentence>
+              <Sentence>{AboutMeData.gitHubUrlSentence}</Sentence>
             </Link>
-            <Link href={blogUrl}>
+            <Link href={Url.blog}>
               <LinkSvg src={ImagePath.blogSvg} alt='blog image'/>
-              <Sentence>{blogUrlSentence}</Sentence>
+              <Sentence>{AboutMeData.blogUrlSentence}</Sentence>
             </Link>
           </GithubBlogBox>
         </IntroductionBox>
