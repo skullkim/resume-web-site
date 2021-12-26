@@ -61,7 +61,7 @@ export enum PageTitle {
   ContactMe = 'CONTACT ME',
 }
 
-export const myNickName = 'skullKim';
+export const myName = 'Yunki kim';
 
 /* about me page */
 

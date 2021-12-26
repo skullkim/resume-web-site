@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 
-import {myNickName} from "../lib/datatPath";
+import {myName} from "../lib/datatPath";
 import {PageProps} from "../lib/dataType";
 
 const PageBox = styled.section`
@@ -70,7 +70,7 @@ const CommonPage: React.FC<PageProps> = ({pageTitle, children}) => {
     <PageBox>
       <PageTitleBox>
         <PageTitle>{pageTitle}</PageTitle>
-        <NickNameBox>{myNickName}</NickNameBox>
+        <NickNameBox>{myName}</NickNameBox>
       </PageTitleBox>
       <ContextBox>{children}</ContextBox>
     </PageBox>
