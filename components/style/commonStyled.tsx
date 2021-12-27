@@ -1,4 +1,5 @@
 import styled, {css} from "styled-components";
+import {ImagePath} from "../../lib/datatPath";
 
 const CommonBoxStyle = css`
   position: relative;
@@ -33,7 +34,10 @@ export const SkillLogo = styled.img`
   width: 5vw;
 `;
 
-export const Dot = styled.img`
+export const Dot = styled.img.attrs({
+  src: `${ImagePath.dot}`,
+  alt: 'dot'
+})`
   width: 2.3vw;
   margin-right: 7px;
 `;

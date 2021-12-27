@@ -33,7 +33,7 @@ const Career: React.FC = () => {
         <CareerSkillBox>
           {myCareer.map(career => (
             <CareerBox key={career}>
-                <Dot src={ImagePath.dot} alt="dot"/>
+                <Dot />
                 <CareerList>{career}</CareerList>
             </CareerBox>
           ))}

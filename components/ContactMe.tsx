@@ -34,15 +34,15 @@ const ContactMe: React.FC = () => {
         <ContactLogo src={ImagePath.contactLogo} alt='contact me logo'/>
         <ContactBox>
           <ContactWay>
-            <Dot src={ImagePath.dot} alt='dot'/>
+            <Dot />
             <ContactInformation>{Contact.phoneNumber}</ContactInformation>
           </ContactWay>
           <ContactWay>
-            <Dot src={ImagePath.dot} alt='dot'/>
+            <Dot />
             <ContactInformation>{Contact.email}</ContactInformation>
           </ContactWay>
           <ContactWay>
-            <Dot src={ImagePath.dot} alt='dot'/>
+            <Dot />
             <ContactInformation>{Contact.kakaoId}</ContactInformation>
           </ContactWay>
         </ContactBox>

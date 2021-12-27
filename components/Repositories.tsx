@@ -41,7 +41,7 @@ const Repositories: React.FC = () => {
         <RepositoriesBox>
           {repository.map(({name, skills, url}) => (
             <RepositoryBox key={url}>
-              <Dot src={ImagePath.dot} alt="dot"/>
+              <Dot />
               <div>
                 <RepositoryLink href={url}>
                   {name}
