@@ -21,6 +21,10 @@ const OtherSkillLogo = styled.img`
   width: 5vw;
   margin-right: 20px;
   margin-bottom: 11.5px;
+
+  @media (max-width: 1140px) {
+    width: 4vw;
+  }
 `;
 
 const OtherSkillRowBox = styled(SkillRowBox)`
