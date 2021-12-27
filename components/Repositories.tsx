@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 
 import CommonPage from "./CommonPage";
-import {ImagePath, PageTitle, repository, Repository} from "../lib/datatPath";
+import {ImagePath, PageTitle, repository} from "../lib/datatPath";
 import {Dot, PageLogo, SkillsBox} from "./style/commonStyled";
 
 const RepositoryLogo = styled(PageLogo)`

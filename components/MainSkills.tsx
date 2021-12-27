@@ -1,4 +1,3 @@
-import styled, {css} from 'styled-components';
 import React from 'react';
 
 import CommonPage from "./CommonPage";

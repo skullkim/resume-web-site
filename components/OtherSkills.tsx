@@ -3,7 +3,7 @@ import React from 'react';
 
 import CommonPage from "./CommonPage";
 import {ImagePath, PageTitle} from "../lib/datatPath";
-import {PageLogo, SkillLogo, SkillRowBox, SkillsBox} from "./style/commonStyled";
+import {PageLogo, SkillRowBox, SkillsBox} from "./style/commonStyled";
 
 const SkillSection = styled.section`
   display: flex;
