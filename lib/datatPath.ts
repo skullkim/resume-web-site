@@ -94,23 +94,28 @@ export const myCareer = [
 ];
 
 /* repositories page */
-export enum Repository {
-  learningCode = 'Learning code refactoring production: 코딩 커뮤니티',
-  learningCodeSkills = '(JS, React, Express, Sequelize, Mysql, Docker, Nginx, HTTPS, AWS(S3))',
-  learningCodeUrl = 'https://github.com/skullkim/learning-code-reafactoring-production',
-
-  metroMap = 'metro map production: 지하철 노선도 서비스',
-  metroMapSkills = '(Express(TS), React(JS), Mysql, Typeorm, Docker, Nginx, HTTPS, JWT)',
-  metroMapUrl = 'https://github.com/skullkim/metro-map-production',
-
-  Itube = 'Itube simple clone of youtube: 유투브 클론코딩',
-  ItubeSkills = '(JS, Express, Nunjucks, Jquery, Sequelize, Mysql, AWS(EC2, RDS, S3))',
-  ItubeUrl = 'https://github.com/skullkim/Itube-simple-clone-of-youtube',
-
-  algorithm = 'Algorithm: 백준 알고리즘 문제 풀이',
-  algorithmSkills = '(C++)',
-  algorithmUrl = 'https://github.com/skullkim/algorithm',
-}
+export const repository = [
+  {
+    name: 'Learning code refactoring production: 코딩 커뮤니티',
+    skills: '(JS, React, Express, Sequelize, Mysql, Docker, Nginx, HTTPS, AWS(S3))',
+    url: 'https://github.com/skullkim/learning-code-reafactoring-production',
+  },
+  {
+    name: 'metro map production: 지하철 노선도 서비스',
+    skills: '(Express(TS), React(JS), Mysql, Typeorm, Docker, Nginx, HTTPS, JWT)',
+    url: 'https://github.com/skullkim/metro-map-production',
+  },
+  {
+    name: 'Itube simple clone of youtube: 유투브 클론코딩',
+    skills: '(JS, Express, Nunjucks, Jquery, Sequelize, Mysql, AWS(EC2, RDS, S3))',
+    url: 'https://github.com/skullkim/Itube-simple-clone-of-youtube',
+  },
+  {
+    name: 'Algorithm: 백준 알고리즘 문제 풀이',
+    skills: '(C++)',
+    url: 'https://github.com/skullkim/algorithm',
+  },
+];
 
 /* contact me page */
 export enum Contact {

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 
 import CommonPage from "./CommonPage";
-import {ImagePath, PageTitle, Repository} from "../lib/datatPath";
+import {ImagePath, PageTitle, repository, Repository} from "../lib/datatPath";
 import {Dot, PageLogo, SkillsBox} from "./style/commonStyled";
 
 const RepositoryLogo = styled(PageLogo)`
@@ -39,42 +39,17 @@ const Repositories: React.FC = () => {
       <>
         <RepositoryLogo src={ImagePath.repositoryLogo} alt='repository logo'/>
         <RepositoriesBox>
-          <RepositoryBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <div>
-              <RepositoryLink href={Repository.learningCodeUrl}>
-                {Repository.learningCode}
-              </RepositoryLink>
-              <UsedSkills>{Repository.learningCodeSkills}</UsedSkills>
-            </div>
-          </RepositoryBox>
-          <RepositoryBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <div>
-              <RepositoryLink href={Repository.metroMapUrl}>
-                {Repository.metroMap}
-              </RepositoryLink>
-              <UsedSkills>{Repository.metroMapSkills}</UsedSkills>
-            </div>
-          </RepositoryBox>
-          <RepositoryBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <div>
-              <RepositoryLink href={Repository.ItubeUrl}>
-                {Repository.Itube}
-              </RepositoryLink>
-              <UsedSkills>{Repository.ItubeSkills}</UsedSkills>
-            </div>
-          </RepositoryBox>
-          <RepositoryBox>
-            <Dot src={ImagePath.dot} alt="dot"/>
-            <div>
-              <RepositoryLink href={Repository.algorithmUrl}>
-                {Repository.algorithm}
-              </RepositoryLink>
-              <UsedSkills>{Repository.algorithmSkills}</UsedSkills>
-            </div>
-          </RepositoryBox>
+          {repository.map(({name, skills, url}) => (
+            <RepositoryBox>
+              <Dot src={ImagePath.dot} alt="dot"/>
+              <div>
+                <RepositoryLink href={url}>
+                  {name}
+                </RepositoryLink>
+                <UsedSkills>{skills}</UsedSkills>
+              </div>
+            </RepositoryBox>
+          ))}
         </RepositoriesBox>
       </>
     </CommonPage>
