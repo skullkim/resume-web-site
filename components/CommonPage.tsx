@@ -11,6 +11,14 @@ const PageBox = styled.section`
   flex-direction: column;
   align-items: center;
   border-bottom: 2px solid black;
+  
+  @media (max-width: 1100px) {
+    height: 140vh;
+  }
+  
+  @media (max-width: 400px) {
+    height: 160vh;
+  }
 `;
 
 const PageTitleBox = styled.div`
@@ -63,6 +71,15 @@ const ContextBox = styled.div`
   width: 80vw;
   display: flex;
   justify-content: space-around;
+  
+  @media (max-width: 1100px) {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 6vh;
+  }
+  
 `;
 
 const CommonPage: React.FC<PageProps> = ({pageTitle, children}) => {
