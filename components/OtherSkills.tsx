@@ -55,10 +55,10 @@ const OtherSkills: React.FC = () => {
        <OtherSkillsBox>
          <SkillSection>
            <SkillCategory>Current Learning</SkillCategory>
-           <SkillRowBox>
+           <OtherSkillRowBox>
              <OtherSkillLogo src={ImagePath.docker} alt="docker logo"/>
              <OtherSkillLogo src={ImagePath.nginx} alt="nginx logo"/>
-           </SkillRowBox>
+           </OtherSkillRowBox>
          </SkillSection>
 
          <SkillSection>
