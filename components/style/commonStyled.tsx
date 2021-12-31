@@ -54,4 +54,12 @@ export const Dot = styled.img.attrs({
 })`
   width: 2.3vw;
   margin-right: 7px;
+  
+  @media (max-width: 800px) {
+    width: 3vw;
+  }
+  
+  @media (max-width: 650px) {
+    width: 5vw;
+  }
 `;

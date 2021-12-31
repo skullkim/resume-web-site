@@ -8,21 +8,33 @@ import {ImagePath, PageTitle, myCareer} from "../lib/datatPath";
 const CareerBox = styled.div`
   display: flex;
   width: 55vw;
+  
+  @media (max-width: 1100px) {
+    width: 80vw;
+  }
 `;
 
 const CareerPageLogo = styled(PageLogo)`
   height: 58vh;
   right: 8vw;
   top: 5vh;
+  
+  @media (max-width: 800px) {
+    width: 50vw;
+    height: auto;
+  }
 `;
 
 const CareerSkillBox = styled(SkillsBox)`
-  right: 9vw;
   top: 10vh;
 `;
 
 const CareerList = styled.p`
   font-size: 20px;
+
+  @media (max-width: 1100px) {
+    margin: 0;
+  }
 `;
 
 const Career: React.FC = () => {
