@@ -88,8 +88,8 @@ export const myCareer = [
   '2018.03 ~ : MyongJi University Dept.Computer Engineering',
   '2019.01 ~ 2020.11: AirForce',
   '2021.03 ~ 2021.12: MyongJi University Like Lion 9th GEN',
+  '2022.02 ~ 2022.11: Woowahan tech course backend 4th GEN',
   '2018 명지대학교 코딩경진대회 우수상',
-  '2021 ICPC 본선(64th)',
   'TOEIC Speaking 6/140',
 ];
 
