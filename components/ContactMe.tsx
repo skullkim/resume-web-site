@@ -14,12 +14,20 @@ const ContactLogo = styled(PageLogo)`
 const ContactWay = styled(SkillRowBox)`
   justify-content: flex-start;
   width: 40vw;
+  
+  @media (max-width: 855px) {
+    width: 60vw;
+  }
 `;
 
 const ContactBox = styled(SkillsBox)`
   height: 23vh;
   top: 20vh;
   right: 10vw;
+  
+  @media (max-width: 1100px) {
+    top: -15vh;
+  }
 `;
 
 const ContactInformation = styled.p`

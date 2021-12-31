@@ -31,9 +31,14 @@ const CareerSkillBox = styled(SkillsBox)`
 
 const CareerList = styled.p`
   font-size: 20px;
+  font-weight: bold;
 
   @media (max-width: 1100px) {
     margin: 0;
+  }
+  
+  @media (max-width: 700px) {
+    margin-bottom: 10px;
   }
 `;
 
