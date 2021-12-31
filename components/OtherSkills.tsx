@@ -9,12 +9,24 @@ const SkillSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  
+  @media (max-width: 1100px) {
+    align-items: center;
+  }
 `;
 
 const SkillCategory = styled.h1`
   font-size: 40px;
   margin-bottom: 13px;
   margin-top: 0;
+  
+  @media (max-width: 1100px) {
+    font-size: 2.5em;
+  }
+  
+  @media (max-width: 420px) {
+    font-size: 1.5em;
+  }
 `;
 
 const OtherSkillLogo = styled.img`
@@ -22,7 +34,11 @@ const OtherSkillLogo = styled.img`
   margin-right: 20px;
   margin-bottom: 11.5px;
 
-  @media (max-width: 1140px) {
+  @media (max-width: 530px) {
+    width: 7vw;
+  }
+  
+  @media (max-width: 110px) {
     width: 4vw;
   }
 `;
@@ -31,6 +47,7 @@ const OtherSkillRowBox = styled(SkillRowBox)`
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 27vw;
+  
 `;
 
 const OtherSkillsBox = styled(SkillsBox)`
@@ -39,12 +56,30 @@ const OtherSkillsBox = styled(SkillsBox)`
   position: relative;
   top: -0.5vh;
   right: 2vw;
+  
+  @media (min-width: 800px) and (max-width: 1100px) {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+  }
 `;
 
 const OtherSkillPageLogo = styled(PageLogo)`
   height: 58vh;
   right: 5.5vw;  
   top: 7vh;
+  
+  @media (max-width: 1140px) {
+    width: 40vw;
+    height: auto;
+  }
+
+  @media (min-width: 800px) and (max-width: 1100px) {
+    
+  }
 `;
 
 const OtherSkills: React.FC = () => {
