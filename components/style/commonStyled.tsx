@@ -23,7 +23,7 @@ export const PageLogo = styled.img`
 `;
 
 export const SkillsBox = styled.div`
-  width: 60vh;
+  width: 40vh;
   height: 43vh;
   display: flex;
   flex-direction: column;

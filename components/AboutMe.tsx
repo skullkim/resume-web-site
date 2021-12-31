@@ -101,8 +101,9 @@ const Sentence = styled.p`
   }
 `;
 
+//
 const GithubBlogBox = styled.div`
-  width: 70vw;
+  width: 50vw;
   margin-left: 5vw;
   position: relative;
   bottom: 5vh;
