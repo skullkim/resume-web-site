@@ -93,6 +93,7 @@ const OtherSkills: React.FC = () => {
            <OtherSkillRowBox>
              <OtherSkillLogo src={ImagePath.docker} alt="docker logo"/>
              <OtherSkillLogo src={ImagePath.nginx} alt="nginx logo"/>
+             <OtherSkillLogo src={ImagePath.java} alt="java logo"/>
            </OtherSkillRowBox>
          </SkillSection>
 
@@ -102,7 +103,6 @@ const OtherSkills: React.FC = () => {
              <OtherSkillLogo src={ImagePath.javaScript} alt="js logo"/>
              <OtherSkillLogo src={ImagePath.jquery} alt="jquery logo"/>
              <OtherSkillLogo src={ImagePath.nunjucks} alt="nunjucks logo"/>
-             <OtherSkillLogo src={ImagePath.java} alt="java logo"/>
              <OtherSkillLogo src={ImagePath.cplusplus} alt="cplusplus logo"/>
              <OtherSkillLogo src={ImagePath.c} alt="c logo"/>
            </OtherSkillRowBox>

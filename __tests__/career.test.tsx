@@ -15,7 +15,7 @@ test('career page', () => {
   const likeLion = screen
     .getByText('2021.03 ~ 2021.12: MyongJi University Like Lion 9th GEN');
   const myongJiCodingCompetition = screen.getByText('2018 명지대학교 코딩경진대회 우수상');
-  const ICPCAlgorithmCompetition = screen.getByText('2021 ICPC 본선(64th)');
+  const ICPCAlgorithmCompetition = screen.getByText('2022.02 ~ 2022.11: Woowahan tech course backend 4th GEN');
   const TOEICSpeaking = screen.getByText('TOEIC Speaking 6/140');
 
   expect(careerLogo).toHaveAttribute('src', "/images/career/career.svg");
