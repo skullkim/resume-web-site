@@ -77,7 +77,7 @@ const ContextBox = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 6vh;
+    row-gap: 40px;
   }
   
 `;

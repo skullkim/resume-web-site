@@ -10,6 +10,12 @@ const RepositoryLogo = styled(PageLogo)`
   position: relative;
   top: 0.7vh;
   right: 8vw;
+  
+  @media (max-width: 1100px) {
+    top: 4vh;
+    width: 35vw;
+  }
+  
 `;
 
 const RepositoryBox = styled.div`
@@ -19,18 +25,46 @@ const RepositoryBox = styled.div`
 `;
 
 const RepositoriesBox = styled(SkillsBox)`
-  right: 10vw;
+  right: 2.8vw;
+  
+  @media (max-width: 1100px) {
+    top: -10vh;
+    width: 70vw;
+    height: 50vh;
+    padding: 10px;
+    border: 1px solid black;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow-y: scroll;
+  }
+  
 `;
 
 const RepositoryLink = styled.a`
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: bold;
+  
+  @media (max-width: 1100px) {
+    font-size: 1.1em;
+  }
+  
+  @media (max-width: 720px) {
+    font-size: 0.9em;
+  }
 `;
 
 const UsedSkills = styled.p`
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: bold;
   margin-top: 0;
+
+  @media (max-width: 1100px) {
+    font-size: 1.1em;
+  }
+  
+  @media (max-width: 720px) {
+    font-size: 0.9em;
+  }
 `;
 
 const Repositories: React.FC = () => {
