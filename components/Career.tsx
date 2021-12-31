@@ -18,6 +18,10 @@ const CareerPageLogo = styled(PageLogo)`
   height: 58vh;
   right: 8vw;
   top: 5vh;
+ 
+  @media (max-width: 1100px) {
+    justify-self: center;
+  }
   
   @media (max-width: 800px) {
     width: 50vw;
@@ -27,6 +31,10 @@ const CareerPageLogo = styled(PageLogo)`
 
 const CareerSkillBox = styled(SkillsBox)`
   top: 10vh;
+  
+  @media (max-width: 1100px) {
+    top: 0;
+  }
 `;
 
 const CareerList = styled.p`
