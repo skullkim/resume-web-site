@@ -12,7 +12,7 @@ const RepositoryLogo = styled(PageLogo)`
   right: 8vw;
   
   @media (max-width: 1100px) {
-    top: -4vh;
+    top: -12vh;
     width: 35vw;
     z-index: 1;
   }
@@ -27,6 +27,7 @@ const RepositoryBox = styled.div`
   display: flex;
   align-items: flex-start;
   width: 50vw;
+  
 `;
 
 const RepositoriesBox = styled(SkillsBox)`
@@ -43,7 +44,11 @@ const RepositoriesBox = styled(SkillsBox)`
     align-items: flex-start;
     overflow-y: scroll;
   }
-  
+
+  @media (max-width: 450px) {
+    position: relative;
+    top: -20vh;
+  }
 `;
 
 const RepositoryLink = styled.a`

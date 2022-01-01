@@ -34,6 +34,7 @@ const CareerSkillBox = styled(SkillsBox)`
   
   @media (max-width: 1100px) {
     top: 0;
+    justify-self: center;
   }
 `;
 
