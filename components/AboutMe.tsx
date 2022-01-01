@@ -26,6 +26,7 @@ const IntroductionBox = styled.section`
   
   @media (max-width: 1100px) {
     position: relative;
+    top: 2vh;
     bottom: 2vh;
     height: 10vh;
   }
@@ -97,7 +98,7 @@ const Sentence = styled.p`
   }
   
   @media (max-width: 400px) {
-    width: 85vw;
+    width: 70vw;
   }
 `;
 

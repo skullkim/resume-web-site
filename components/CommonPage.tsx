@@ -38,13 +38,22 @@ const PageTitle = styled.h1`
   text-align: center;
   line-height: 9vh;
   
-  @media (max-width: 650px) {
-    font-size: 20px;
+  @media (max-width: 1100px) {
+    font-size: 2em;
+  }
+  
+  @media (max-width: 800px) {
+    font-size: 1.5em;
+  }
+  
+  @media (max-width: 600px) {
+    font-size: 1em;
   }
   
   @media (max-width: 400px) {
-    font-size: 15px;
+    font-size: 0.5em;
   }
+  
 `;
 
 const NickNameBox = styled.div`
@@ -58,13 +67,14 @@ const NickNameBox = styled.div`
   position: relative;
   top: -2vh;
   font-size: 1.3em;
+  text-align: center;
   
-  @media (max-width: 650px) {
-    font-size: 11px;
+  @media (max-width: 800px) {
+    font-size: 1em;
   }
-
-  @media (max-width: 400px) {
-    font-size: 7px;
+  
+  @media (max-width: 600px) {
+    font-size: 0.8em;
   }
 `;
 
