@@ -16,13 +16,9 @@ const SkillSection = styled.section`
 `;
 
 const SkillCategory = styled.h1`
-  font-size: 40px;
+  font-size: 2em;
   margin-bottom: 13px;
   margin-top: 0;
-  
-  @media (max-width: 1100px) {
-    font-size: 2.5em;
-  }
   
   @media (max-width: 420px) {
     font-size: 1.5em;
