@@ -9,6 +9,14 @@ const ContactLogo = styled(PageLogo)`
   height: 60vh;
   top: 4vh;
   right: 6vw;
+  
+  @media (max-width: 1100px) {
+    top: -10vh;
+  }
+  
+  @media (max-width: 600px) {
+    top: -15vh;
+  }
 `;
 
 const ContactWay = styled(SkillRowBox)`
@@ -26,7 +34,15 @@ const ContactBox = styled(SkillsBox)`
   right: 10vw;
   
   @media (max-width: 1100px) {
-    top: -15vh;
+    top: -20vh;
+  }
+  
+  @media (max-width: 600px) {
+    top: -30vh;
+  }
+  
+  @media (max-width: 400px) {
+    top: -40vh;
   }
 `;
 
