@@ -12,8 +12,13 @@ const RepositoryLogo = styled(PageLogo)`
   right: 8vw;
   
   @media (max-width: 1100px) {
-    top: 4vh;
+    top: -4vh;
     width: 35vw;
+    z-index: 1;
+  }
+  
+  @media (max-width: 800px) {
+    width: 45vw;
   }
   
 `;
@@ -26,9 +31,10 @@ const RepositoryBox = styled.div`
 
 const RepositoriesBox = styled(SkillsBox)`
   right: 2.8vw;
+  z-index: 2;
   
   @media (max-width: 1100px) {
-    top: -10vh;
+    top: -120px;
     width: 70vw;
     height: 50vh;
     padding: 10px;
