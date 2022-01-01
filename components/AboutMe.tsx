@@ -82,7 +82,7 @@ const Introduction = styled.div`
 `;
 
 const Sentence = styled.p`
-  width: 57vw;
+  width: 53vw;
   font-size: 20px;
   font-weight: bold;
   
